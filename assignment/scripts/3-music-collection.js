@@ -29,14 +29,19 @@ console.log('The albums in the collection are now ', collection );
 function showCollection( array ){
     console.log( 'in showCollection', array );
     console.log( 'The number of items in the array is ', array.length );//per instructions, showing the number of items in the array
+    let album = {
+        title: '',
+        artist: '',
+        yearPublished: ''
+    }//end album object
     for( let i=0; i<array.length; i++){
         //looping through each album in the collection to log to console
-        console.log( `The albums in the collection are ${array.title[i]} by ${array.artist[i]} published in ${array.yearPublished[i]}`)
+        console.log( `The albums in the collection are ${array[i].title} by ${array[i].artist} released in the year ${array[i].yearPublished}.`);
 
     }//end for loop
 
 }//end showCollection
 
-//calling function to test showCollection function
+//calling function to test showCollection function with collection array
 console.log( showCollection(collection));
 

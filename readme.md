@@ -28,9 +28,9 @@ Update the `3-music-collection.js` file to do the following:
   - Console.log each album as added using the returned value. [x]
   - After all are added, console.log the `collection` array. [x]
 
-- Add a function named `showCollection`. This function should:
-  - Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
-  - Console.log the number of items in the array.
+- Add a function named `showCollection`. This function should: [x]
+  - Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.) [x]
+  - Console.log the number of items in the array. [x]
   - Loop over the array and console.log each album's information formatted like: `TITLE by ARTIST, published in YEAR`.
 
 - Test the `showCollection` function.
