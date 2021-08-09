@@ -29,19 +29,33 @@ console.log('The albums in the collection are now ', collection );
 function showCollection( array ){
     console.log( 'in showCollection', array );
     console.log( 'The number of items in the array is ', array.length );//per instructions, showing the number of items in the array
-    let album = {
-        title: '',
-        artist: '',
-        yearPublished: ''
-    }//end album object
     for( let i=0; i<array.length; i++){
         //looping through each album in the collection to log to console
         console.log( `The albums in the collection are ${array[i].title} by ${array[i].artist} released in the year ${array[i].yearPublished}.`);
-
     }//end for loop
-
 }//end showCollection
 
 //calling function to test showCollection function with collection array
-console.log( showCollection(collection));
+showCollection(collection);
+
+
+//creating findByArtist function that takes in a string (artist) to see if the artist exists in the collection array
+let artistMatch = []; //created global empty array to hold results - created globally so I could log the results after the fucntion has run
+
+function findByArtist( artist ){
+    console.log('in findByArtist', artist );
+    //loop through the array for a match
+    for( let i=0; i<collection.length; i++){
+        if( artist === collection[i].artist ){ //checking if argument matches artist in collection array
+            artistMatch.push(artist); //if so, push that artist to a new array
+            return artistMatch;
+        }//end condition check
+
+    }//end for loop
+}//end findByArtist
+
+console.log(findByArtist('Taylor Swift'));
+console.log(artistMatch);
+// console.log(findByArtist('Cardi B'));
+// console.log(artistMatch);
 
