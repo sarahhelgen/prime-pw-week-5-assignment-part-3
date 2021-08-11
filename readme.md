@@ -36,12 +36,12 @@ Update the `3-music-collection.js` file to do the following:
 - Test the `showCollection` function. [x]
 
 - Add a function named `findByArtist`. This function should:
-  - Take in `artist` (a string) parameter
-  - Create an array to hold any results, empty to start
-  - Loop through the `collection` and add any objects with a matching artist to the array.
-  - Return the array with the matching results. If no results are found, return an empty array.
+  - Take in `artist` (a string) parameter [x]
+  - Create an array to hold any results, empty to start [x]
+  - Loop through the `collection` and add any objects with a matching artist to the array. [x]
+  - Return the array with the matching results. If no results are found, return an empty array. [x]
 
-- Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. Check that for artists with multiple matches, all are found.
+- Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. Check that for artists with multiple matches, all are found. [x]
 
 > When testing your functions, write all tests in the JavaScript file!
 

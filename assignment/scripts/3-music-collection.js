@@ -56,6 +56,19 @@ function findByArtist( artist ){
 
 console.log(findByArtist('Taylor Swift'));
 console.log(artistMatch);
-// console.log(findByArtist('Cardi B'));
-// console.log(artistMatch);
+console.log(findByArtist('Cardi B'));
+console.log(artistMatch); //didn't push Cardi B into new array - function is working
+
+console.log( '---Stretch Goals---');
+
+//creating a function called search that takes an object parameter 
+
+function search( object ){
+    console.log( 'in search', object );
+    let searchCriteria = {
+        artist: artist,
+        year: year
+    }
+
+}//end search
 
