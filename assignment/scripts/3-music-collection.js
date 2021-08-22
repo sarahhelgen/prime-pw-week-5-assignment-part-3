@@ -56,6 +56,9 @@ function findByArtist( artist ){
 
 console.log(findByArtist('Cardi B'));
 console.log(findByArtist('Taylor Swift'));
+console.log(findByArtist('The Replacements'));
+console.log(findByArtist('Lizzo'));
+
 
 
 // console.log(artistMatch);
