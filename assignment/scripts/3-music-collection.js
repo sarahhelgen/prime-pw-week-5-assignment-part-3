@@ -40,24 +40,27 @@ showCollection(collection);
 
 
 //creating findByArtist function that takes in a string (artist) to see if the artist exists in the collection array
-let artistMatch = []; //created global empty array to hold results - created globally so I could log the results after the fucntion has run
+
 
 function findByArtist( artist ){
     console.log('in findByArtist', artist );
+    let artistMatch = []; //created empty array to hold results
     //loop through the array for a match
     for( let i=0; i<collection.length; i++){
         if( artist === collection[i].artist ){ //checking if argument matches artist in collection array
             artistMatch.push(artist); //if so, push that artist to a new array
-            return artistMatch;
         }//end condition check
-
     }//end for loop
+    return artistMatch; //reminder to self: need to return AFTER for loop
 }//end findByArtist
 
-console.log(findByArtist('Taylor Swift'));
-console.log(artistMatch);
 console.log(findByArtist('Cardi B'));
-console.log(artistMatch); //didn't push Cardi B into new array - function is working
+console.log(findByArtist('Taylor Swift'));
+
+
+// console.log(artistMatch);
+// console.log(findByArtist('Cardi B'));
+// console.log(artistMatch); //didn't push Cardi B into new array - function is working
 
 console.log( '---Stretch Goals---');
 
